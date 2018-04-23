@@ -139,6 +139,9 @@ $LATESTARTSERVICE && cp -af $INSTALLER/common/service.sh $MODPATH/service.sh
 ui_print "- Setting permissions"
 set_permissions
 
+ui_print "- Cleaning up credmgr.db directory"
+rm -f /data/credmgr/*
+
 ##########################################################################################
 # Finalizing
 ##########################################################################################
