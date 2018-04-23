@@ -1,7 +1,7 @@
-id=template
-name=Template Module
-version=v1
-versionCode=1
-author=topjohnwu
-description=A short description
+id=Sony-DRM-Fix-Magisk
+name=DRM-Fix for Sony Devices
+version=v0.9
+versionCode=0900
+author=the_brad
+description=
 minMagisk=1500
