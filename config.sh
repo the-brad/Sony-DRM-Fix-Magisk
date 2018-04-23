@@ -86,13 +86,11 @@ set_permissions() {
   # The following is default permissions, DO NOT remove
   set_perm_recursive  $MODPATH  0  0  0755  0644
   
-  set_perm_recursive  $MODPATH/system//vendor/bin/secd          0  2000  0755  0644  u:object_r:secd_exec:s0
-  set_perm  $MODPATH/system/vendor/lib/drmfix.so                0  2000  0644  u:object_r:vendor_file:s0
-  set_perm  $MODPATH/system/vendor/lib/drmfuck.so               0  2000  0644  u:object_r:vendor_file:s0
-  set_perm  $MODPATH/system/vendor/lib64/drmfix.so              0  2000  0644  u:object_r:vendor_file:s0
-  set_perm  $MODPATH/system/vendor/lib64/drmfuck.so             0  2000  0644  u:object_r:vendor_file:s0
-  
-  
+  set_perm_recursive  $MODPATH/system/vendor/bin/secd           0  2000  0755  0644   u:object_r:secd_exec:s0
+  set_perm            $MODPATH/system/vendor/lib/drmfix.so      0  2000  0644         u:object_r:vendor_file:s0
+  set_perm            $MODPATH/system/vendor/lib/drmfuck.so     0  2000  0644         u:object_r:vendor_file:s0
+  set_perm            $MODPATH/system/vendor/lib64/drmfix.so    0  2000  0644         u:object_r:vendor_file:s0
+  set_perm            $MODPATH/system/vendor/lib64/drmfuck.so   0  2000  0644         u:object_r:vendor_file:s0 
 }
 
 ##########################################################################################
